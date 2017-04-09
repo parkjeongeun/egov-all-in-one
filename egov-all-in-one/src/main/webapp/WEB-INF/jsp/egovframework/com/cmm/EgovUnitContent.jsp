@@ -11,7 +11,7 @@
 </head>
 <body>
 	<c:if test="${loginVO != null}">
-		${loginVO.name }님 환영합니다. <a href="${pageContext.request.contextPath }/uat/uia/actionLogout.do">로그아웃</a>
+		${loginVO.name }님 환영합니다!. <a href="${pageContext.request.contextPath }/uat/uia/actionLogout.do">로그아웃</a>
 	</c:if>
 	<c:if test="${loginVO == null }">
 		<jsp:forward page="/uat/uia/egovLoginUsr.do"/>
